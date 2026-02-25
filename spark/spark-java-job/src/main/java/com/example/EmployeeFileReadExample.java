@@ -1,3 +1,8 @@
+package com.example;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.spark.sql.Dataset;
 import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
@@ -11,11 +16,14 @@ import com.sun.net.httpserver.HttpExchange;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
+import java.util.Properties;
 
 public class EmployeeFileReadExample {
 
-    
+
     public static void main(String[] args) {
+
+        String bootstrapServers = "3.92.209.44:9092";
 
         SparkSession spark = SparkSession.builder()
                 .appName("Employee File Read Example")
@@ -34,14 +42,45 @@ public class EmployeeFileReadExample {
         Dataset<Row> highSalary = df.filter(col("salary").gt(50000));
 
         System.out.println("Employees with salary > 50000:");
-        highSalary.show();
 
+        highSalary.toJSON().foreachPartition(partition -> {
+            Properties props = new Properties();
+            props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+            props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+            props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+            props.put(ProducerConfig.ACKS_CONFIG, "1"); // Set acks = 1 as requested
+
+            KafkaProducer<String, String> producer = new KafkaProducer<>(props);
+            while (partition.hasNext()) {
+                String recordJson = partition.next();
+                // Sending one by one
+                producer.send(new ProducerRecord<>("high-salary-topic", null, recordJson));
+            }
+            producer.close();
+        });
         
         Dataset<Row> avgSalary = df.groupBy("department")
                 .agg(avg("salary").alias("average_salary"));
 
         System.out.println("Average salary by department:");
         avgSalary.show();
+
+        avgSalary.toJSON().foreachPartition(partition -> {
+            Properties props = new Properties();
+            props.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+            props.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+            props.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
+            props.put(ProducerConfig.ACKS_CONFIG, "1"); // Set acks = 1 as requested
+
+            KafkaProducer<String, String> producer = new KafkaProducer<>(props);
+            while (partition.hasNext()) {
+                String recordJson = partition.next();
+                // Sending one by one
+                producer.send(new ProducerRecord<>("average-salary-topic", null, recordJson));
+            }
+            producer.close();
+        });
+
         spark.stop();
     }
 
