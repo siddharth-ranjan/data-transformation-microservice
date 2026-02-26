@@ -1,0 +1,183 @@
+[2026-02-24T17:58:51.179+0000] {processor.py:186} INFO - Started process (PID=43630) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T17:58:51.180+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T17:58:51.182+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.181+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T17:58:51.192+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T17:58:51.263+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.263+0000] {override.py:1900} INFO - Created Permission View: can edit on DAG:microservice_spark_dag
+[2026-02-24T17:58:51.271+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.271+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG:microservice_spark_dag
+[2026-02-24T17:58:51.277+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.277+0000] {override.py:1900} INFO - Created Permission View: can read on DAG:microservice_spark_dag
+[2026-02-24T17:58:51.286+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.286+0000] {override.py:1900} INFO - Created Permission View: can delete on DAG Run:microservice_spark_dag
+[2026-02-24T17:58:51.291+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.291+0000] {override.py:1900} INFO - Created Permission View: menu access on DAG Run:microservice_spark_dag
+[2026-02-24T17:58:51.296+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.296+0000] {override.py:1900} INFO - Created Permission View: can create on DAG Run:microservice_spark_dag
+[2026-02-24T17:58:51.301+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.301+0000] {override.py:1900} INFO - Created Permission View: can read on DAG Run:microservice_spark_dag
+[2026-02-24T17:58:51.302+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.302+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T17:58:51.309+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.309+0000] {dag.py:3262} INFO - Creating ORM DAG for microservice_spark_dag
+[2026-02-24T17:58:51.310+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:58:51.310+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T17:58:51.322+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.147 seconds
+[2026-02-24T17:59:52.283+0000] {processor.py:186} INFO - Started process (PID=43688) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T17:59:52.285+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T17:59:52.286+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:59:52.286+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T17:59:52.292+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T17:59:52.303+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:59:52.303+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T17:59:52.312+0000] {logging_mixin.py:190} INFO - [2026-02-24T17:59:52.311+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T17:59:52.330+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.051 seconds
+[2026-02-24T18:00:46.817+0000] {processor.py:186} INFO - Started process (PID=43750) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:00:46.819+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:00:46.820+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:00:46.820+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:00:46.826+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:00:46.837+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:00:46.837+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:00:46.846+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:00:46.846+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:00:46.864+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.051 seconds
+[2026-02-24T18:01:35.877+0000] {processor.py:186} INFO - Started process (PID=43802) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:01:35.878+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:01:35.879+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:01:35.879+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:01:35.885+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:01:35.897+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:01:35.896+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:01:35.905+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:01:35.905+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:01:35.922+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.050 seconds
+[2026-02-24T18:02:29.564+0000] {processor.py:186} INFO - Started process (PID=44222) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:02:29.565+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:02:29.567+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:02:29.566+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:02:29.572+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:02:29.585+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:02:29.585+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:02:29.594+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:02:29.594+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:02:29.612+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:03:22.944+0000] {processor.py:186} INFO - Started process (PID=44285) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:03:22.945+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:03:22.946+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:03:22.946+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:03:22.952+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:03:22.964+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:03:22.964+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:03:22.973+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:03:22.973+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:03:22.992+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.053 seconds
+[2026-02-24T18:04:10.722+0000] {processor.py:186} INFO - Started process (PID=44702) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:04:10.723+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:04:10.725+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:04:10.724+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:04:10.730+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:04:10.741+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:04:10.741+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:04:10.750+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:04:10.750+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:04:10.768+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.050 seconds
+[2026-02-24T18:04:59.547+0000] {processor.py:186} INFO - Started process (PID=44752) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:04:59.548+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:04:59.549+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:04:59.549+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:04:59.555+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:04:59.566+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:04:59.566+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:04:59.664+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:04:59.663+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:04:59.680+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.138 seconds
+[2026-02-24T18:05:57.420+0000] {processor.py:186} INFO - Started process (PID=44820) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:05:57.422+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:05:57.423+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:05:57.423+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:05:57.429+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:05:57.441+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:05:57.441+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:05:57.450+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:05:57.450+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:05:57.470+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.054 seconds
+[2026-02-24T18:06:51.747+0000] {processor.py:186} INFO - Started process (PID=44876) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:06:51.748+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:06:51.750+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:06:51.750+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:06:51.756+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:06:51.767+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:06:51.767+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:06:51.776+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:06:51.776+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:06:51.794+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.051 seconds
+[2026-02-24T18:07:40.993+0000] {processor.py:186} INFO - Started process (PID=44929) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:07:40.994+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:07:40.995+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:07:40.995+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:07:41.001+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:07:41.013+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:07:41.013+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:07:41.022+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:07:41.022+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:07:41.041+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:08:31.659+0000] {processor.py:186} INFO - Started process (PID=44981) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:08:31.660+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:08:31.662+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:08:31.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:08:31.668+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:08:31.679+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:08:31.679+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:08:31.689+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:08:31.689+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:08:31.707+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.053 seconds
+[2026-02-24T18:09:19.836+0000] {processor.py:186} INFO - Started process (PID=45032) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:09:19.837+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:09:19.839+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:09:19.839+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:09:19.845+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:09:19.857+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:09:19.857+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:09:19.866+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:09:19.866+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:09:19.884+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:10:10.019+0000] {processor.py:186} INFO - Started process (PID=45085) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:10:10.020+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:10:10.022+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:10:10.022+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:10:10.028+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:10:10.040+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:10:10.040+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:10:10.049+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:10:10.049+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:10:10.067+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:11:00.251+0000] {processor.py:186} INFO - Started process (PID=45142) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:11:00.252+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:11:00.253+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:11:00.253+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:11:00.259+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:11:00.270+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:11:00.270+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:11:00.279+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:11:00.279+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:11:00.297+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.051 seconds
+[2026-02-24T18:11:51.916+0000] {processor.py:186} INFO - Started process (PID=45195) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:11:51.917+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:11:51.919+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:11:51.919+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:11:51.925+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:11:51.936+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:11:51.936+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:11:51.945+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:11:51.945+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:11:51.964+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:12:43.594+0000] {processor.py:186} INFO - Started process (PID=45247) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:12:43.595+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:12:43.596+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:12:43.596+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:12:43.602+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:12:43.614+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:12:43.614+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:12:43.623+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:12:43.623+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:12:43.641+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:13:32.149+0000] {processor.py:186} INFO - Started process (PID=45300) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:13:32.150+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:13:32.152+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:13:32.151+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:13:32.157+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:13:32.169+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:13:32.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:13:32.178+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:13:32.178+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:13:32.196+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.051 seconds
+[2026-02-24T18:14:21.835+0000] {processor.py:186} INFO - Started process (PID=45351) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:14:21.836+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:14:21.838+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:14:21.838+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:14:21.844+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:14:21.855+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:14:21.855+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:14:21.863+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:14:21.863+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:14:21.882+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.051 seconds
+[2026-02-24T18:15:13.109+0000] {processor.py:186} INFO - Started process (PID=45407) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:15:13.110+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:15:13.112+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:15:13.112+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:15:13.118+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:15:13.131+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:15:13.131+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:15:13.140+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:15:13.140+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:15:13.158+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.054 seconds
+[2026-02-24T18:16:02.816+0000] {processor.py:186} INFO - Started process (PID=45460) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:16:02.818+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:16:02.819+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:16:02.819+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:16:02.825+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:16:02.837+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:16:02.837+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:16:02.847+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:16:02.847+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:16:02.866+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.054 seconds
+[2026-02-24T18:16:51.981+0000] {processor.py:186} INFO - Started process (PID=45512) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:16:51.982+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:16:51.984+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:16:51.983+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:16:51.990+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:16:52.001+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:16:52.001+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:16:52.010+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:16:52.010+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:16:52.031+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.054 seconds
+[2026-02-24T18:17:46.388+0000] {processor.py:186} INFO - Started process (PID=45571) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:17:46.389+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:17:46.391+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:17:46.390+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:17:46.397+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:17:46.408+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:17:46.408+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:17:46.417+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:17:46.417+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:17:46.435+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:18:36.168+0000] {processor.py:186} INFO - Started process (PID=45623) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:18:36.169+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:18:36.171+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:18:36.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:18:36.176+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:18:36.188+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:18:36.188+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:18:36.198+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:18:36.197+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:18:36.215+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds
+[2026-02-24T18:19:28.843+0000] {processor.py:186} INFO - Started process (PID=45678) to work on /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:19:28.844+0000] {processor.py:914} INFO - Processing file /home/ubuntu/airflow/dags/microservice_spark_dag.py for tasks to queue
+[2026-02-24T18:19:28.846+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:19:28.846+0000] {dagbag.py:588} INFO - Filling up the DagBag from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:19:28.852+0000] {processor.py:925} INFO - DAG(s) 'microservice_spark_dag' retrieved from /home/ubuntu/airflow/dags/microservice_spark_dag.py
+[2026-02-24T18:19:28.864+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:19:28.863+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-02-24T18:19:28.872+0000] {logging_mixin.py:190} INFO - [2026-02-24T18:19:28.872+0000] {dag.py:4180} INFO - Setting next_dagrun for microservice_spark_dag to None, run_after=None
+[2026-02-24T18:19:28.891+0000] {processor.py:208} INFO - Processing /home/ubuntu/airflow/dags/microservice_spark_dag.py took 0.052 seconds

@@ -1,0 +1,30 @@
+[2026-02-25T12:52:30.233+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-02-25T12:52:30.240+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: microservice_spark_dag.check_api_status manual__2026-02-25T12:52:28.036102+00:00 [queued]>
+[2026-02-25T12:52:30.243+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: microservice_spark_dag.check_api_status manual__2026-02-25T12:52:28.036102+00:00 [queued]>
+[2026-02-25T12:52:30.243+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2026-02-25T12:52:30.257+0000] {taskinstance.py:2888} INFO - Executing <Task(BranchPythonOperator): check_api_status> on 2026-02-25 12:52:28.036102+00:00
+[2026-02-25T12:52:30.260+0000] {standard_task_runner.py:72} INFO - Started process 3347 to run task
+[2026-02-25T12:52:30.262+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'microservice_spark_dag', 'check_api_status', 'manual__2026-02-25T12:52:28.036102+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/microservice_spark_dag.py', '--cfg-path', '/tmp/tmps1ig2tn7']
+[2026-02-25T12:52:30.262+0000] {standard_task_runner.py:105} INFO - Job 36: Subtask check_api_status
+[2026-02-25T12:52:30.286+0000] {task_command.py:467} INFO - Running <TaskInstance: microservice_spark_dag.check_api_status manual__2026-02-25T12:52:28.036102+00:00 [running]> on host ip-172-31-43-74.eu-north-1.compute.internal
+[2026-02-25T12:52:30.326+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='microservice_spark_dag' AIRFLOW_CTX_TASK_ID='check_api_status' AIRFLOW_CTX_EXECUTION_DATE='2026-02-25T12:52:28.036102+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-25T12:52:28.036102+00:00'
+[2026-02-25T12:52:30.327+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-02-25T12:52:30.327+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-02-25T12:52:30.327+0000] {logging_mixin.py:190} INFO - Current task name:check_api_status state:running start_date:2026-02-25 12:52:30.240478+00:00
+[2026-02-25T12:52:30.327+0000] {logging_mixin.py:190} INFO - Dag name:microservice_spark_dag and current dag run status:running
+[2026-02-25T12:52:30.327+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-02-25T12:52:30.327+0000] {baseoperator.py:405} WARNING - BranchPythonOperator.execute cannot be called outside TaskInstance!
+[2026-02-25T12:52:30.332+0000] {logging_mixin.py:190} INFO - Exception while calling API: HTTPConnectionPool(host='host.docker.internal', port=8081): Max retries exceeded with url: /csv/generate (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7cf072053fe0>: Failed to resolve 'host.docker.internal' ([Errno -2] Name or service not known)"))
+[2026-02-25T12:52:30.332+0000] {python.py:240} INFO - Done. Returned value was: api_failed
+[2026-02-25T12:52:30.332+0000] {branch.py:38} INFO - Branch into api_failed
+[2026-02-25T12:52:30.332+0000] {skipmixin.py:230} INFO - Following branch {'api_failed'}
+[2026-02-25T12:52:30.336+0000] {skipmixin.py:278} INFO - Skipping tasks [('run_spark_job', -1)]
+[2026-02-25T12:52:30.355+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-02-25T12:52:30.356+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=microservice_spark_dag, task_id=check_api_status, run_id=manual__2026-02-25T12:52:28.036102+00:00, execution_date=20260225T125228, start_date=20260225T125230, end_date=20260225T125230
+[2026-02-25T12:52:30.364+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-02-25T12:52:30.364+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-02-25T12:52:30.364+0000] {logging_mixin.py:190} INFO - Dag name:microservice_spark_dag queued_at:2026-02-25 12:52:28.044881+00:00
+[2026-02-25T12:52:30.364+0000] {logging_mixin.py:190} INFO - Task hostname:ip-172-31-43-74.eu-north-1.compute.internal operator:BranchPythonOperator
+[2026-02-25T12:52:30.394+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2026-02-25T12:52:30.405+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-25T12:52:30.411+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
