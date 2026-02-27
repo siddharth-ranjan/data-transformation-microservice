@@ -1,69 +1,38 @@
 package com.example.service;
 
-import com.example.model.User;
-import jakarta.annotation.PostConstruct;
-import org.springframework.core.io.ClassPathResource;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import software.amazon.awssdk.core.ResponseInputStream;
+import software.amazon.awssdk.services.s3.S3Client;
+import software.amazon.awssdk.services.s3.model.GetObjectRequest;
+import software.amazon.awssdk.services.s3.model.GetObjectResponse;
 
-import java.io.BufferedReader;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.List;
+import java.io.InputStream;
 
 @Service
 public class CsvService {
 
-    private final List<User> users = new ArrayList<>();
+    private final S3Client s3Client;
 
-    @PostConstruct
-    public void loadCsvData() throws IOException {
-        ClassPathResource resource = new ClassPathResource("emp_record.csv");
+    @Value("${aws.s3.bucket-name}")
+    private String bucketName;
 
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(resource.getInputStream(), StandardCharsets.UTF_8))) {
+    @Value("${aws.s3.object-key}")
+    private String objectKey;
 
-            String line;
-            boolean header = true;
-
-            while ((line = reader.readLine()) != null) {
-                // Skip header
-                if (header) {
-                    header = false;
-                    continue;
-                }
-
-                String[] fields = line.split(",");
-
-                users.add(new User(
-                        Integer.parseInt(fields[0].substring(1)),
-                        fields[1],
-                        Integer.parseInt(fields[2]),
-                        fields[3]
-                ));
-            }
-        }
+    public CsvService(S3Client s3Client) {
+        this.s3Client = s3Client;
     }
 
-    public List<User> getUsers() {
-        return users;
-    }
+    public InputStream fetchCsvFromS3() {
 
-    public ByteArrayInputStream generateCsv() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("id,name,salary,dept\n");
+        GetObjectRequest request = GetObjectRequest.builder()
+                .bucket(bucketName)
+                .key(objectKey)
+                .build();
 
-        for (User user : users) {
-            sb.append(user.getId()).append(",")
-                    .append(user.getName()).append(",")
-                    .append(user.getSalary()).append(",")
-                    .append(user.getDept()).append("\n");
-        }
+        ResponseInputStream<GetObjectResponse> s3Object = s3Client.getObject(request);
 
-        return new ByteArrayInputStream(
-                sb.toString().getBytes(StandardCharsets.UTF_8)
-        );
+        return s3Object;
     }
 }

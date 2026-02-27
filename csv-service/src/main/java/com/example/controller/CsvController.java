@@ -19,10 +19,10 @@ public class CsvController {
     @GetMapping("/download/users")
     public ResponseEntity<InputStreamResource> downloadCsv() {
 
-        InputStreamResource file = new InputStreamResource(csvService.generateCsv());
+        InputStreamResource file = new InputStreamResource(csvService.fetchCsvFromS3());
 
         return ResponseEntity.ok()
-                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=emp_data.csv")
+                .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=emp_record.csv")
                 .contentType(MediaType.parseMediaType("text/csv"))
                 .body(file);
     }
